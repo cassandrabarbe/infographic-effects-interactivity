@@ -1,6 +1,11 @@
-var $numbers = $('numbers');
+var $numbers = $('.numbers');
+
+var $numbersLeft = $('.numbers-left');
+var $numbersRight = $('.numbers-right');
 
 $numbers.waypoint(function() {
-  $numbers.addClass('js-numbers-animate');
+  $numbersLeft.addClass('js-numbers-animate');
   console.log('waypoint');
 }, {offset: '30%'});
+
+$('.click').localScroll();

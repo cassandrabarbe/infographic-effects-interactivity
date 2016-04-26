@@ -16,18 +16,85 @@ body {
   margin: 0;
 }
 
-h1 {
+.blue{
+  background-color: #154475;
+}
+
+#title {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
+  transition: all .5 linear;
 }
 
-.righthand{
-  animation: hand 3s forward;
+#title:hover{
+  color: #75C4E4;
+  transform: (10px, 8px);
+}
+.numbers-left {
+  animation: numbers 1s ease-in infinite;
+  transform-origin: center;
+}
+.numbers-right{
+    animation: numbers 1s ease-in infinite;
+    transform-origin: center;
 }
 
-@keyframes hand{
+@keyframes numbers {
 
-  from { transform: rotate(-1px, 2px); }
+  0% {
+    transform: rotate(0deg);
+}
 
-  to{ transform: translate(-6px, 1px); }
+  30% {
+    transform: rotate(30deg);
+  }
+
+  60% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.shake{
+  animation: shakeit 3s infinite;
+}
+
+@keyframes shakeit{
+
+  from{ transform: translate(-10px, 0px);}
+
+  to { transform: translate(0px, 0);}
+}
+
+
+#h2{
+  text-align: center;
+}
+
+#h2:hover{
+  fill: lightblue;
+  transform: (10px, 8px);
+}
+
+.blue{
+  text-align: center;
+}
+
+.blue:hover{
+  fill: lightblue;
+  transform: (10px, 8px);
+}
+
+.slide{
+  animation: slide 20s alternate;
+}
+
+@keyframes slide{
+
+  from{ transform: translate(-200px, 0px);}
+
+  to { transform: translate(0px, 0);}
 }
