@@ -16,7 +16,7 @@ body {
   margin: 0;
 }
 
-.blue{
+.blue {
   background-color: #154475;
 }
 
@@ -26,9 +26,8 @@ body {
   transition: all linear;
 }
 
-#title:hover{
-  color: #75C4E4;
-  transform: (10px, 8px);
+#title:hover {
+  color: #75c4e4;
 }
 
 .numbers-left {
@@ -36,16 +35,16 @@ body {
   transform-origin: center;
 }
 
-.numbers-right{
-    animation: numbers 1s ease-in infinite;
-    transform-origin: center;
+.numbers-right {
+  animation: numbers 1s ease-in infinite;
+  transform-origin: center;
 }
 
 @keyframes numbers {
 
   0% {
     transform: rotate(0deg);
-}
+  }
 
   30% {
     transform: rotate(30deg);
@@ -60,43 +59,40 @@ body {
   }
 }
 
-.shake{
+.shake {
   animation: shakeit 3s infinite;
 }
 
-@keyframes shakeit{
+@keyframes shakeit {
 
-  from{ transform: translate(-10px, 0px);}
+  from { transform: translate(-10px, 0); }
 
-  to { transform: translate(0px, 0);}
+  to { transform: translate(0, 0); }
 }
 
-
-#h2{
+#h2 {
   text-align: center;
 }
 
-#h2:hover{
+#h2:hover {
   fill: lightblue;
-  transform: (10px, 8px);
 }
 
-.blue{
+.blue {
   text-align: center;
 }
 
-.blue:hover{
+.blue:hover {
   fill: lightblue;
-  transform: (10px, 8px);
 }
 
-.slide{
+.slide {
   animation: slide 20s alternate;
 }
 
-@keyframes slide{
+@keyframes slide {
 
-  from{ transform: translate(-200px, 0px);}
+  from { transform: translate(-200px, 0); }
 
-  to { transform: translate(0px, 0);}
+  to { transform: translate(0, 0); }
 }
