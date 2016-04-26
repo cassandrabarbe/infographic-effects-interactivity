@@ -30,10 +30,12 @@ body {
   color: #75C4E4;
   transform: (10px, 8px);
 }
+
 .numbers-left {
   animation: numbers 1s ease-in infinite;
   transform-origin: center;
 }
+
 .numbers-right{
     animation: numbers 1s ease-in infinite;
     transform-origin: center;
