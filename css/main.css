@@ -23,7 +23,6 @@ body {
 #title {
   text-align: center;
   font-size: 2em;
-  transition: all .5 linear;
 }
 
 #title:hover{
